@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addItem, removeItem, updateQuantity } from './CartSlice';
 import './CartItem.css';
-import CartItem from './CartItem';
 
 const CartItem = ({ onContinueShopping, onRemoveFromCart }) => {
   const cart = useSelector(state => state.cart.items);
@@ -71,7 +70,7 @@ const CartItem = ({ onContinueShopping, onRemoveFromCart }) => {
   return (
     <div className="cart-container">
       <h2 style={{ color: 'black' }}>Total Cart Amount: £{calculateTotalAmount()}</h2>
-      <h3>{totalItems}</h3>
+      <h3>Total Items in Cart: {totalItems}</h3>
       <div>
         {cart.map(item => (
           <div className="cart-item" key={item.name}>
