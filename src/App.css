@@ -1,3 +1,6 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* LandingPage.css */
 * {
   margin: 0;
@@ -29,13 +32,14 @@
   height: 100vh;
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
-  padding-top: 150px;
+  padding: 150px 16px 20px 16px;
+  gap: 20px;
 }
 
 .landing_content {
   z-index: 1;
   text-align: center;
-  width: 400px;
+  width: 30%;
   height: 400px;
   display: flex;
   align-items: center;
@@ -61,7 +65,7 @@
 .divider {
   width: 50px;
   height: 2px;
-  background-color: #4caf50;
+  background-color: #57C785;
   margin: 10px 0;
 }
 
@@ -70,7 +74,7 @@
   font-size: 23px;
   border: none;
   border-radius: 5px;
-  background-color: #4caf50;
+  background-color: #57C785;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -91,7 +95,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(238 255 238 / 90%);
   /* Adjust background opacity as needed */
   transition: top 0.5s ease;
   /* Smooth transition for top property */
@@ -112,15 +116,22 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+    padding:20px 16px 20px 16px;
+  }
+  .content h1 {
+    font-size:32px;
   }
 
   .landing_content {
-    margin-top: 100px; /* Adjust as needed */
+    margin-top: 0px; /* Adjust as needed */
     margin-left: 0;
     width: 80%; /* Adjust as needed */
     text-align: center;
   }
 
+.landing_content{
+    width:100%;
+}
   .aboutus_container {
     margin-top: 20px; /* Adjust as needed */
     width: 80%; /* Adjust as needed */

@@ -28,3 +28,9 @@
   .plant_logo_left{
     text-align: left;
   }
+
+@media screen and (max-width: 768px) {
+  .about-us-container{
+    width:100%;
+}
+}
