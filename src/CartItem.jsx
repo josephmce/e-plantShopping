@@ -55,7 +55,7 @@ const CartItem = ({ onContinueShopping, onRemoveFromCart }) => {
   const handleRemove = (item) => {
     dispatch(removeItem(item.name));
     //Adding this to resent the add to cart button from "added" back to "add to cart"
-    onRemoveFromCart(item.name);
+    onRemoveFromCart(item);
   };
 
   // Calculate total cost based on quantity for an item
